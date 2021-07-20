@@ -34,3 +34,17 @@ html, body, #app {
   necessário.
   */
 }
+
+.red {
+  order: 1; /* Determina a ordem das divs, começando em 0 */
+}
+
+.green {
+  background: #0f0;
+  order: 2;
+}
+
+.blue {
+  background: #00f;
+  order: 0;
+}
