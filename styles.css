@@ -21,4 +21,14 @@ html, body, #app {
   height: 60px;
   background: #f00;
   margin: 5px;
+  flex-grow: 1; /* Permite controlar se o componente pode ser redimensionado, tanto para maior, quanto para
+  menor. Nessa propriedade, estamos dizendo que nosso elemento aceita ser aumentado para caber no elemnto pai
+  que é o #app
+  */
+  flex-shrink: 1; /* Diz se o componente tem a capacidade de se espremer no container pai, por default ele
+  é 1, por isso da aquela sensação de responsividade.
+  */
+  flex: 1 0; /* flex-grow + flex-shrink / por padrão, pessoal deixa flex: 1, para comprimir e estender, caso
+  necessário.
+  */
 }
