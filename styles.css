@@ -1,6 +1,19 @@
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+
 #app {
-  display: flex; /* Por padrão, o display flex alinha horizontalmente os seus "filhos" */
+  display: flex; /* Por padrão, o display flex alinha horizontalmente os seus "filhos", propriedade flex-direction */
   flex-direction: row; /* padrão = row */
+  align-items: center; /* padrão = flex-start */
+  justify-content: center; /* padrão = flex-start */
+  /* Caso o valor do flex-direction seja row, o align-items servirá para alinhar verticalmente, e o
+  justify-content, horizontalmente.
+  */
+  /* Caso o valor do flex-direction seja column, o align-items servirá para alinhar horizontalmente, é sempre o
+  do sentido do flex-direction, já o justify-content, alinha no mesmo eixo do flex-direction.
+  */
 }
 
 .box {
