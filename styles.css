@@ -1,5 +1,6 @@
 #app {
-
+  display: flex; /* Por padrão, o display flex alinha horizontalmente os seus "filhos" */
+  flex-direction: row; /* padrão = row */
 }
 
 .box {
