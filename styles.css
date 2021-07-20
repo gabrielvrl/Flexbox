@@ -14,6 +14,8 @@ html, body, #app {
   /* Caso o valor do flex-direction seja column, o align-items servirá para alinhar horizontalmente, é sempre o
   do sentido do flex-direction, já o justify-content, alinha no mesmo eixo do flex-direction.
   */
+  flex-wrap: wrap; /* Faz com que os filhos mantenham o tamanho deles, e quebre a linha, caso estrapole */
+  align-content: center; /* Faz o alinhamento de quando tem mais de uma linha, só é permitido grças o flex-wrap: wrap; */
 }
 
 .box {
